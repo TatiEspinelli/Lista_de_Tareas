@@ -1,0 +1,107 @@
+header {
+  background: linear-gradient(
+    135deg,
+    rgba(251, 180, 172, 0.7),
+    rgba(189, 195, 199, 0.7),
+    rgba(110, 110, 110, 0.7)
+  );
+  padding: 20px;
+}
+
+#moonIcon {
+  cursor: pointer;
+}
+
+#moonIcon:hover {
+  color: grey;
+}
+
+.task-container {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #e5e221;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-width: 2px;
+}
+
+.task-list {
+  list-style: none;
+  padding: 0;
+}
+
+.task-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+#newTask {
+  width: 70%;
+  padding: 8px;
+}
+
+.done {
+  text-decoration: line-through;
+}
+
+.drag-handle {
+  cursor: grab;
+  margin-right: 10px;
+}
+
+.ghost-item {
+  opacity: 0.5;
+  background-color: #f2f2f2;
+}
+
+/* Dark Mode */
+
+body.dark-mode {
+  background-color: #1a1a1a;
+  color: white;
+}
+
+body.dark-mode header {
+  background: linear-gradient(
+    135deg,
+    rgba(40, 40, 40, 0.7),
+    rgba(30, 30, 30, 0.7),
+    rgba(20, 20, 20, 0.7)
+  );
+  color: white; /* Color de texto en modo oscuro */
+}
+
+body.dark-mode #moonIcon:hover {
+  color: #ccc;
+}
+
+
+body.dark-mode .task-container {
+    border-color: #888; /* Cambia el color del borde en modo oscuro */
+    border-width: 5px;
+}
+
+body.dark-mode .mark-done-button{
+    background-color: grey !important;
+}
+
+body.dark-mode .mark-done-button:hover{
+    background-color: rgb(179, 179, 179) !important;
+}
+
+body.dark-mode #addTaskButton{
+    background-color: #e79600 !important;
+    border: black;
+    color: white;
+}
+
+body.dark-mode #addTaskButton:hover{
+    background-color: #FFA500 !important;
+}
+
+body.dark-mode #newTask{
+    background-color:#d8d8d8;
+}
